@@ -1,0 +1,24 @@
+import random
+import time
+def generate_numbers(n):
+    numbers = []
+    for _ in range(n):
+        numbers.append(random.randint(1, 100))
+    return numbers
+def calculate_average(nums):
+    if not nums:
+        return 0
+    total = sum(nums)
+    return total / len(nums)
+def main():
+    count = 10
+    nums = generate_numbers(count)
+    avg = calculate_average(nums)
+    print("Numbers:", nums)
+    print("Average:", avg)
+    time.sleep(1)
+    print("Done")
+    print("Script completed successfully")
+if __name__ == "__main__":
+    main()
+# End of script

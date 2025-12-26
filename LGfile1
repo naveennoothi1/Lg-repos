@@ -1,5 +1,8 @@
 import random
 import time
+import numpy
+import pandas 
+import matplotlib
 def generate_numbers(n):
     numbers = []
     for _ in range(n):
